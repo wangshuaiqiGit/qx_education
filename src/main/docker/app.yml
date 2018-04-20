@@ -1,0 +1,14 @@
+version: '2'
+services:
+    qx_education-app:
+        image: qx_education
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://qx_education-mysql:3306/qx_education?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    qx_education-mysql:
+        extends:
+            file: mysql.yml
+            service: qx_education-mysql
