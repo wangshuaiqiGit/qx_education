@@ -5,7 +5,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "choose_subject")
-public class choosesubject {
+public class Choosesubject {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
