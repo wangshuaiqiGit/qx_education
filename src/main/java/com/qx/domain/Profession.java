@@ -65,10 +65,7 @@ public class Profession {
 
     @Size(max = 50)
     @Column(name = "chemistryEvent", length = 50)
-    private String chemistryEvent;0.
-
-
-    
+    private String chemistryEvent;
 
     @Size(max = 50)
     @Column(name = "biologyEvent", length = 50)
